@@ -1,7 +1,5 @@
-// Define the initial array of cats
 const cats = ["Milo", "Otis", "Garfield"];
 
-// Destructive Methods
 function destructivelyAppendCat(name) {
   cats.push(name);
 }
@@ -18,19 +16,18 @@ function destructivelyRemoveFirstCat() {
   cats.shift();
 }
 
-// Non-Destructive Methods
 function appendCat(name) {
-  return [...cats, name]; // Creates a new array with the new cat added at the end
+  return [...cats, name]; 
 }
 
 function prependCat(name) {
-  return [name, ...cats]; // Creates a new array with the new cat added at the beginning
+  return [name, ...cats]; 
 }
 
 function removeLastCat() {
-  return cats.slice(0, -1); // Returns a new array without the last cat
+  return cats.slice(0, -1); 
 }
 
 function removeFirstCat() {
-  return cats.slice(1); // Returns a new array without the first cat
+  return cats.slice(1); 
 }
